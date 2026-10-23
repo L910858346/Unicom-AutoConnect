@@ -3,8 +3,8 @@
 面向 Windows 10/11：**开机登录后自动连上中国联通校园网 Wi-Fi（目标 SSID 在 `config/config.json` 中配置，模板里是 `YOUR_CAMPUS_SSID`），
 在后台直接完成门户认证，全程不打开浏览器。**
 
-> **模板**：`YOUR_CAMPUS_SSID`、`YOUR_USERNAME`、`YOUR_PASSWORD`、`YOUR_PORTAL_HOST`
-> 都是占位符，仓库里不包含任何真实设备、网络或账号信息。使用前请按「三分钟上手」填写自己的值。
+> `YOUR_CAMPUS_SSID`、`YOUR_USERNAME`、`YOUR_PASSWORD`、`YOUR_PORTAL_HOST`
+> 都是占位符。使用前请填写自己的值。
 
 > 浏览器不能自己连 Wi-Fi，这是操作系统的活。本项目的分工是：
 > Windows 负责“连上无线”，脚本负责“在后台提交门户认证”。
