@@ -1,0 +1,46 @@
+{
+  "_说明": "GitHub 脱敏模板：请把 YOUR_CAMPUS_SSID 换成实际 SSID，把 username / password 填成实际认证账号密码；账号密码为空时后台认证会自动跳过，不会误提交。真实账号密码只放在本地 config.json，且该文件已被 .gitignore 排除。",
+  "ssid": ["YOUR_CAMPUS_SSID"],
+  "profileName": "",
+  "interfaceName": "",
+  "connectTimeoutSeconds": 45,
+  "overallTimeoutMinutes": 15,
+  "retryIntervalSeconds": 10,
+  "browser": {
+    "enabled": false,
+    "url": "",
+    "fallbackUrl": "http://www.msftconnecttest.com/connecttest.txt",
+    "reopenCooldownMinutes": 10,
+    "openDelaySeconds": 2,
+    "waitAfterOpenSeconds": 40
+  },
+  "probes": [
+    { "url": "http://www.msftconnecttest.com/connecttest.txt", "expect": "Microsoft Connect Test", "expectStatus": 0 },
+    { "url": "http://connectivitycheck.gstatic.com/generate_204", "expect": "", "expectStatus": 204 }
+  ],
+  "autoLogin": {
+    "enabled": true,
+    "mode": "eportal",
+    "eportalService": "",
+    "portalUrl": "",
+    "submitUrl": "",
+    "username": "",
+    "password": "",
+    "usernameField": "",
+    "passwordField": "",
+    "extraFields": {},
+    "useReferer": true,
+    "maxAttempts": 3,
+    "loginUrl": "",
+    "method": "POST",
+    "contentType": "application/x-www-form-urlencoded",
+    "preRequestUrl": "",
+    "form": {},
+    "extraHeaders": {},
+    "timeoutSeconds": 20
+  },
+  "logging": {
+    "directory": "",
+    "keepDays": 14
+  }
+}
