@@ -311,10 +311,3 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\tests\Test-CampusNet.ps1
 `logs\connect-YYYYMMDD.log`，状态另存于 `logs\state.json`。
 
 **退出码**：0 = 已联网 / 认证成功；1 = 超时未认证；2 = 没有可用无线网卡。
-
-## 安全说明
-
-- `config/config.json` 里存的是**明文账号密码**，该文件已在 `.gitignore` 中排除，不要提交、不要打包公开；
-- 后台认证的密码只在本地 PowerShell 进程和门户之间传输；
-- 浏览器扩展的密码存在 `chrome.storage.local`（明文，但不出本地）；
-- 如果要把项目发布到 GitHub，先确认 `config/config.json` 没有被 `git add`，并再次确认里面没有真实账号密码。
