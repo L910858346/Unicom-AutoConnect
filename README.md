@@ -6,7 +6,7 @@
 > `YOUR_CAMPUS_SSID`、`YOUR_USERNAME`、`YOUR_PASSWORD`、`YOUR_PORTAL_HOST`
 > 都是占位符。使用前请填写自己的值。
 
-> 浏览器不能自己连 Wi-Fi，这是操作系统的活。本项目的分工是：
+> 本项目的分工是：
 > Windows 负责“连上无线”，脚本负责“在后台提交门户认证”。
 
 ```mermaid
